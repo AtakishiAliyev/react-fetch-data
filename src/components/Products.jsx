@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import ProductCard from "./ProductCard";
 
 const Products = ({ isLoading, data }) => {
@@ -12,6 +13,11 @@ const Products = ({ isLoading, data }) => {
       })}
     </div>
   );
+};
+
+Products.propTypes = {
+  isLoading: PropTypes.bool,
+  data: PropTypes.object,
 };
 
 export default Products;

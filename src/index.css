@@ -72,3 +72,10 @@ body {
 .navbar a {
   color: #fff;
 }
+
+.custom-select-wrapper {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
