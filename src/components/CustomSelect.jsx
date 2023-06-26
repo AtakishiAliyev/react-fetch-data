@@ -16,7 +16,7 @@ const CustomSelect = ({ isDisabled }) => {
     <div className="custom-select-wrapper">
       <Space wrap>
         <Select
-          defaultValue={searchParams.get("sortBy") || "name"}
+          value={searchParams.get("sortBy") || "name"}
           style={{
             width: 120,
           }}
@@ -44,6 +44,10 @@ const CustomSelect = ({ isDisabled }) => {
 
 CustomSelect.propTypes = {
   isDisabled: PropTypes.bool,
+};
+
+CustomSelect.defaultProps = {
+  isDisabled: false,
 };
 
 export default CustomSelect;
