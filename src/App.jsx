@@ -11,7 +11,6 @@ function App() {
         <Link to="/products/mobil-telefonlar">Telefonlar</Link>
         <Link to="/products/aksesuarlar">Aksesuarlar</Link>
       </nav>
-      <h3>ok</h3>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="products/:id" element={<ProductList />} />
